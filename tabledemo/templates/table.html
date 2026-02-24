@@ -1,0 +1,244 @@
+<!DOCUMENT html>
+<html>
+<head>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 20px;
+
+         }
+
+        tr:nth-child(even) {
+          background-color: #dcdcdc;
+        }
+        p {
+          background-color: blue;
+          color: white;
+          border-radius: 30px;
+          padding: 8px;
+        }
+        .pending {
+          background-color: yellow;
+          color: black;
+          border-radius: 20px;
+          padding: 8px;
+        }
+        .validate{
+          background-color: gray;
+          color: black;
+          border-radius: 20px;
+          padding: 3px;
+
+
+        }
+        #accepted {
+          background-color: green;
+          color: black;
+          border-radius: 20px;
+          padding: 8px;
+        }
+        .invalid{
+          background-color: red;
+          color: black;
+          border-radius: 20px;
+          padding: 3px;
+        }
+
+
+
+
+    </style>
+</head>
+    <body>
+<table>
+    <tr>
+        <th>No</th>
+        <th>Valid</th>
+        <th>Id</th>
+        <th>Case Id</th>
+        <th>MedDra</th>
+        <th>IsertData</th>
+        <th>ModifiedDate</th>
+        <th>Status</th>
+        <th>R2/R3 Valid</th>
+        <th>Ema Trasaction Status</th>
+        <th>User</th>
+        <th>Type</th>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>R3</td>
+        <td style="color:DodgerBlue;">48</td>
+        <td style="color:DodgerBlue;">FR-example</td>
+        <td>25.0</td>
+        <td>Feb.12,2026,1:16 p.m.</td>
+        <td>Feb.23,2026,1:35 p.m.</td>
+        <td><p>Review</p></td>
+        <td><p class="invalid"> R2: invalid</p>
+            <p class="invalid">R3: invalid</p>
+        </td>
+        <td><p id="accepted">Accepted</p></td>
+        <td>admin</td>
+        <td>Spontaneous Report</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>R3</td>
+        <td style="color:DodgerBlue;">47</td>
+        <td style="color:DodgerBlue;">LV-example</td>
+        <td>25.0</td>
+        <td>Feb.12,2026,1:16 p.m.</td>
+        <td>Feb.23,2026,7:26 p.m.</td>
+        <td><p>Review</p></td>
+        <td><p class="validate">  R2: At to validate</p>
+            <p class="validate">R3: At to validate</p>
+        </td>
+        <td><p class="pending">pending</p></td>
+        <td>admin</td>
+        <td>Spontaneous Report</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>R3</td>
+        <td style="color:DodgerBlue;">46</td>
+        <td style="color:DodgerBlue;">EE-example</td>
+        <td>25.0</td>
+        <td>Feb.12,2026,1:16 p.m.</td>
+        <td>Feb.16,2026,12:18 p.m.</td>
+        <td><p >Review</p></td>
+        <td><p class="validate"> R2: At to validate</p>
+            <p class="validate">R3: At to validate</p>
+        </td>
+        <td><p class="pending">pending</p></td>
+        <td>admin</td>
+        <td>Spontaneous Report</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>R3</td>
+        <td style="color:DodgerBlue;">45</td>
+        <td style="color:DodgerBlue;">EE-example</td>
+        <td>25.0</td>
+        <td>Feb.12,2026,1:16 p.m.</td>
+        <td>Feb.16,2026,12:18 p.m.</td>
+        <td><p >Review</p></td>
+        <td><p class="validate"> R2: At to validate</p>
+            <p class="validate">R3: At to validate</p>
+        </td>
+        <td><p class="pending">pending</p></td>
+        <td>admin</td>
+        <td>Other</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>R3</td>
+        <td style="color:DodgerBlue;">44</td>
+        <td style="color:DodgerBlue;">EE-example</td>
+        <td>25.0</td>
+        <td>Feb.12,2026,1:16 p.m.</td>
+        <td>Feb.16,2026,12:18 p.m.</td>
+        <td><p>Review</p></td>
+        <td><p class="validate"> R2: At to validate</p>
+            <p class="validate">R3: At to validate</p>
+        </td>
+        <td><p class="pending">pending</p></td>
+        <td>admin</td>
+        <td>Report From Study</td>
+
+    </tr>
+
+    <tr>
+        <td>6</td>
+        <td>R3</td>
+        <td style="color:DodgerBlue;">43</td>
+        <td style="color:DodgerBlue;">EE-example</td>
+        <td>25.0</td>
+        <td>Feb.12,2026,1:16 p.m.</td>
+        <td>Feb.16,2026,12:18 p.m.</td>
+        <td><p>Review</p></td>
+        <td><p class="validate"> R2: At to validate</p>
+            <p class="validate">R3: At to validate</p>
+        </td>
+        <td><p class="pending">pending</p></td>
+        <td>admin</td>
+        <td>Report From Study</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>R3</td>
+        <td style="color:DodgerBlue;">42</td>
+        <td style="color:DodgerBlue;">EE-example</td>
+        <td>25.0</td>
+        <td>Feb.12,2026,1:16 p.m.</td>
+        <td>Feb.16,2026,12:18 p.m.</td>
+        <td><p>Review</p></td>
+        <td><p class="validate"> R2: At to validate</p>
+            <p class="validate">R3: At to validate</p>
+        </td>
+        <td><p class="pending">pending</p></td>
+        <td>admin</td>
+        <td>Spontaneous Report</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>R3</td>
+        <td style="color:DodgerBlue;">41</td>
+        <td style="color:DodgerBlue;">EE-example</td>
+        <td>25.0</td>
+        <td>Feb.12,2026,1:16 p.m.</td>
+        <td>Feb.16,2026,12:18 p.m.</td>
+        <td><p>Review</p></td>
+        <td><p class="validate"> R2: At to validate</p>
+            <p class="validate">R3: At to validate</p>
+        </td>
+        <td><p class="pending">pending</p></td>
+        <td>admin</td>
+        <td>Spontaneous Report</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>R3</td>
+        <td style="color:DodgerBlue;">40</td>
+        <td style="color:DodgerBlue;">EE-example</td>
+        <td>25.0</td>
+        <td>Feb.12,2026,1:16 p.m.</td>
+        <td>Feb.16,2026,12:18 p.m.</td>
+        <td><p>Review</p></td>
+        <td><p class="validate"> R2: At to validate</p>
+            <p class="validate">R3: At to validate</p>
+        </td>
+        <td><p class="pending">pending</p></td>
+        <td>admin</td>
+        <td>Report From Study</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>R3</td>
+        <td style="color:DodgerBlue;">39</td>
+        <td style="color:DodgerBlue;">EE-example</td>
+        <td>25.0</td>
+        <td>Feb.12,2026,1:16 p.m.</td>
+        <td>Feb.16,2026,12:18 p.m.</td>
+        <td><p>Review</p></td>
+        <td><p class="validate"> R2: At to validate</p>
+            <p class="validate">R3: At to validate</p>
+        </td>
+        < <td><p class="pending">pending</p></td>
+        <td>admin</td>
+        <td>Spontaneous Report</td>
+    </tr>
+
+
+</table>
+</body>
+
+</html>
