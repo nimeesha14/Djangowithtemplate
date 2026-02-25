@@ -1,6 +1,7 @@
 <!DOCUMENT html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         table {
           font-family: arial, sans-serif;
@@ -22,13 +23,14 @@
           background-color: blue;
           color: white;
           border-radius: 30px;
-          padding: 8px;
+          padding: 3px 8px;
         }
         .pending {
           background-color: yellow;
           color: black;
           border-radius: 20px;
-          padding: 8px;
+          padding: 3px 8px;
+          display: inline-block;
         }
         .validate{
           background-color: gray;
@@ -42,7 +44,8 @@
           background-color: green;
           color: black;
           border-radius: 20px;
-          padding: 8px;
+          padding: 3px 8px;
+          display: inline-block;
         }
         .invalid{
           background-color: red;
@@ -50,13 +53,72 @@
           border-radius: 20px;
           padding: 3px;
         }
+        .create{
+           border:2px solid #04AA6D;
+           color: #04AA6D;
+           padding:8px;
+           margin: 6px 4px 6px 8px ;
+           background-color: white;
+           cursor: pointer;
+           border-radius: 5px;
+        }
+        .create:hover{
+           background-color: #059862;
+           color: #ffffff;
+        }
+        #search {
+           border:2px solid #1E90FF;
+           color: #1E90FF;
+           padding: 8px;
+           margin: 6px;
+           background-color: white;
+           cursor: pointer;
+           border-radius: 5px;
+        }
 
 
+        #search:hover{
+           background-color: #1E90FF;
+           color: #ffffff;
+        }
 
+        .pagination{
+            list-style-type: None;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+
+        }
+
+        .pagination li a{
+             border: 2px solid #1E90FF;
+             margin: 2px;
+             padding: 8px;
+             color: #1E90FF;
+             cursor: pointer;
+             border-radius: 5px;
+        }
+        .pagination li a:hover{
+            background-color: #1E90FF;
+            color:#ffffff;
+        }
+
+        .main{
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+        }
 
     </style>
 </head>
-    <body>
+<body>
+<h1 style="text-align: center;">Case Safety Report</h1>
+<div class="main">
+    <button class="create">Create New ICSR</button>
+    <button id="search"> <i class="fa fa-search"></i>Search ICSR</button>
+</div>
+
+
 <table>
     <tr>
         <th>No</th>
@@ -98,7 +160,7 @@
         <td>Feb.12,2026,1:16 p.m.</td>
         <td>Feb.23,2026,7:26 p.m.</td>
         <td><p>Review</p></td>
-        <td><p class="validate">  R2: At to validate</p>
+        <td><p class="validate"> R2: At to validate</p>
             <p class="validate">R3: At to validate</p>
         </td>
         <td><p class="pending">pending</p></td>
@@ -113,7 +175,7 @@
         <td>25.0</td>
         <td>Feb.12,2026,1:16 p.m.</td>
         <td>Feb.16,2026,12:18 p.m.</td>
-        <td><p >Review</p></td>
+        <td><p>Review</p></td>
         <td><p class="validate"> R2: At to validate</p>
             <p class="validate">R3: At to validate</p>
         </td>
@@ -129,7 +191,7 @@
         <td>25.0</td>
         <td>Feb.12,2026,1:16 p.m.</td>
         <td>Feb.16,2026,12:18 p.m.</td>
-        <td><p >Review</p></td>
+        <td><p>Review</p></td>
         <td><p class="validate"> R2: At to validate</p>
             <p class="validate">R3: At to validate</p>
         </td>
@@ -170,7 +232,6 @@
         <td><p class="pending">pending</p></td>
         <td>admin</td>
         <td>Report From Study</td>
-        <td></td>
     </tr>
     <tr>
         <td>7</td>
@@ -232,13 +293,23 @@
         <td><p class="validate"> R2: At to validate</p>
             <p class="validate">R3: At to validate</p>
         </td>
-        < <td><p class="pending">pending</p></td>
+        <td><p class="pending">pending</p></td>
         <td>admin</td>
         <td>Spontaneous Report</td>
     </tr>
-
-
 </table>
+
+
+<nav aria-label="pagination">
+    <ul class="pagination">
+        <li><a class="page">1</a></li>
+        <li><a class="page">2</a></li>
+        <li><a class="page">3</a></li>
+        <li><a class="page">Next Page <span>&raquo;</span></a></li>
+    </ul>
+</nav>
+
+
 </body>
 
 </html>
